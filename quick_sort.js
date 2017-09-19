@@ -27,7 +27,6 @@ function sort_from_file(filename) {
     console.log(filename)
     console.log("--------")
     console.log(quickSort(items))
-
   })
 }
 
