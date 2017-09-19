@@ -1,6 +1,16 @@
 'use strict'
 
-function bubbleSort(items) {}
+function bubbleSort(items) {
+  var temp;
+  for(var i in items){
+    if(items[i]> items[i+1]){
+      temp=items[i];
+      items[i]= items[i+1];
+      items[i+1]=temp;
+    }
+  }
+  return items;
+}
 
 
 // Driver code
