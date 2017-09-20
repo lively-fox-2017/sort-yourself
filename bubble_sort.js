@@ -1,6 +1,18 @@
 'use strict'
 
-function bubbleSort(items) {}
+function bubbleSort(items) {
+	for(var i=0;i<items.length-1;i++){
+		for(var j=items.length-1;j>i;j--){
+			if(items[i] > items[j]){
+				var sementara = items[i];
+				items[i] = items[j];
+				items[j] = sementara;
+			}
+		}
+	}
+	
+	return items;
+}
 
 
 // Driver code
@@ -25,7 +37,7 @@ function sort_from_file(filename) {
 
     console.log(filename)
     console.log("--------")
-    console.log(bubbleSort2(items))
+    console.log(bubbleSort(items))
 
   })
 }
