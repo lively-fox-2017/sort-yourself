@@ -1,6 +1,19 @@
 'use strict'
 
-function selectionSort(arrays){
+function selectionSort(arrays) {
+  for (let i = 0; i < arrays.length - 1; i++) {
+    let iMin = i
+    for (let j = i + 1; j < arrays.length; j++) {
+      if (arrays[j] < arrays[iMin]) {
+        iMin = j
+      }
+    }
+    let temp = arrays[iMin]
+    arrays[iMin] = arrays[i]
+    arrays[i] = temp
+
+  }
+  return arrays
 }
 
 // Driver code
@@ -30,3 +43,6 @@ function sort_from_file(filename) {
 }
 
 main()
+
+// var test = [3, 5, 2, 7, 5, 1, 12, 11, 10, 99, 33, 1];
+// console.log(selectionSort(test));
