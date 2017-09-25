@@ -1,6 +1,23 @@
 'use strict'
 
 function selectionSort(arrays){
+
+  var arrBaru = []
+
+  while(arrays.length >= 1) {
+    var terkecil = arrays[0]
+    var index = 0
+
+    for(var i = 0; i < arrays.length; i++) {
+      if(arrays[i] <= terkecil) {
+        terkecil = arrays[i]
+        index = i
+      }
+    }
+    arrBaru.push(arrays[index])
+    arrays.splice(index, 1)
+  }
+  return arrBaru
 }
 
 // Driver code
