@@ -1,0 +1,32 @@
+1. Bubble Sort
+    - pengertian
+      metode sorting data dengan cara membandingkan data ke n dengan data n-1 dengan melakukan pembandingan dimulai dari n+1
+    - Kelebihan
+      1. merupakan metode yang paling simple
+      2. merupakan metode yang mudah dipahami algoritmanya
+    - Kelemahan
+      1. tidak efisien karena akan melakukan pengulangan dengan jumlah yang sama walaupun datanya sudah terurut hal ini disebabkan karena pengecekan untuk menentukan posisinya
+      2. peforma akan jauh menurun apabila data yang akan disorting dalam jumlah yang besar
+2. Selecetion Sort
+    - pengertian
+      metode sorting dengan cara mencari nilai terkecil dan data nilai terbesar dimulai dari data posisi 0 hingga posisi N-1.
+    - Kelebihan
+      1. salah satu metode yang mudah dipahami dan simple
+      2. operasi pertukarannya hanya dilakukan sekali saja yaitu pada saat ditemukan nilai terkecil
+      3. waktu sorting lebih cepat apabila dibandingkan dengan buble sort
+    - Kelemahan
+      1. sulit membagi masalah
+3. Merge Sort
+    - Pengetian
+      metode sorting dengan membagi 2 bagaian sama besar masing-masing tabel diurutkan secara rekursif dan digabungkan kembali menjadi data yang sudah terurut
+    - Kelebihan
+      1. waktu sorting akan lebih efisien jika terdapat data yang besar
+    - Kelemahan
+      1. membutuhkan memori yang cukup besar dikarenakan prosesnya dilakukan secara rekursif
+4. Quick Sort
+    - Pengertian
+      metode sorting dengan membagi/mempartisi sekumpulan data bagian yang kecil dan melakukan sorting berdasarkan partisi-partisi yang sudah dibuat
+    - Kelebihan
+      1. waktu sorting akan lebih efisien jika terdapat data yang besar
+    - kekurangan
+      1. algoritma yang cukup kompleks sehingga cukup sulit untuk diterapkan

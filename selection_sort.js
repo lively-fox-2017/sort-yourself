@@ -1,6 +1,23 @@
 'use strict'
 
 function selectionSort(arrays){
+  let lok;
+  //looping sebanyak panjang angka
+  for (var i = 0; i < arrays.length; i++) {
+    //assign lok dengan i
+    lok=i;
+    //lakukan perulangan dimulai dari i+1 sebanyak panjant arrays
+    for (var j = i+1; j < arrays.length; j++) {
+      //cek jika arrays[lok]>arrays[j] maka tukar lok dengan j
+      if (arrays[lok]>arrays[j]){
+        lok=j;
+      }
+    }
+    //tukarkan arrays[i] dengan arrays[lok]
+    let temp=arrays[i];
+    arrays[i]=arrays[lok];
+    arrays[lok]=temp;
+  }
 }
 
 // Driver code
