@@ -1,6 +1,19 @@
 'use strict'
 
 function selectionSort(arrays){
+  var minIdx, temp, len = arrays.length;
+  for (var i = 0; i < len; i++) {
+    minIdx = i;
+    for (var j = i+1; j<len; j++) {
+      if(arrays[j]<arrays[minIdx]) {
+        minIdx = j;
+      }
+    }
+    temp = arrays[i];
+    arrays[i] = arrays[minIdx];
+    arrays[minIdx] = temp;
+  }
+  return arrays;
 }
 
 // Driver code
